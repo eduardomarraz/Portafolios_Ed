@@ -20,6 +20,25 @@
         .header-title {
             font-size: 2em; /* Ajusta el tamaño según lo que necesites */
         }
+        .social-icons {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        .social-item {
+            margin-right: 0px; /* Ajusta este valor según lo necesites */
+        }
+
+        .social-item:last-child {
+            margin-right: 120px; /* Elimina el margen derecho del último elemento */
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: #ca1212; /* Asegúrate de que el color se ajuste a tu diseño */
+        }
     </style>
     <header class="header">
         <div class="container">
@@ -31,7 +50,6 @@
                 <h4 class="header-subtitle" >Hola, soy</h4>
                 <h1 class="header-title">Eduardo Martínez</h1>
                 <h6 class="header-mono" >Full-stack developer | Junior</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </header>
@@ -55,7 +73,7 @@
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
-                        <h5 class="brand-title">Eduardo Martinez</h5>
+                        <h5 class="brand-title">Eduardo Martínez</h5>
                         <div class="brand-subtitle">Desarrollador Web | FullStack</div>
                     </li>
                 </ul>
@@ -90,10 +108,10 @@
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
                     <li><span>Fecha de nacimiento</span> : 23/08/1992</li>
-                    <li><span>Email</span> : eduardomr_@hotmail.com</li>
+                    <li><span>Email</span> : <a href="mailto:eduardomr_@hotmail.com">eduardomr_@hotmail.com</a></li>
                     <li><span>Telefono</span> : +(34) 649770726</li>
-                    <li><span>Linkedin</span> : https://www.linkedin.com/in/eduardo-martinez-ramirez/</li>
-                    <li><span>GitHub</span> : https://github.com/eduardomarraz </li>
+                    <li><span>Linkedin</span> : <a href="https://www.linkedin.com/in/eduardo-martinez-ramirez/" target="_blank">https://www.linkedin.com/in/eduardo-martinez-ramirez/</a></li>
+                    <li><span>GitHub</span> : <a href="https://github.com/eduardomarraz" target="_blank">https://github.com/eduardomarraz</a> </li>
                     <li><span>Dirección</span> : Barrio del Pilar - Madrid</li>
                 </ul>
                 <ul class="social-icons pt-3">
@@ -175,7 +193,7 @@
                         <div class="card-body">
                             <h7 class="title text-danger">03/2024 - 07/2024</h7>
                             <p id="highlighted-text" style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"><strong>Curso de programador de sistemas en AWS</strong></p>
-                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Centro Tajamar (510h).</strong></p>
+                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Centro Tajamar (600h).</strong></p>
                             <ul>
                                 <li>Desarrollo de aplicaciones en la nube utilizando AWS SDKs y herramientas de desarrollo.</li>
                                 <li>Uso de servicios como EC2, S3, RDS, SNS, Lambda, Docker, Kubernetes, Terraform, Grafana</li>
@@ -619,7 +637,7 @@
                         <h6 class="title">Microsoft Certified: Azure Fundamentals</h6>
 
                         <p class="post-details">
-                            <a href="#">Issued by Microsoft</a>
+                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_microsoft-certified-azure-fundamentals-was-activity-7178001560566710272-jt5K?utm_source=share&utm_medium=member_desktop">Issued by Microsoft</a>
                             <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_microsoft-certified-azure-fundamentals-was-activity-7178001560566710272-jt5K?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 12</a>
                         </p>
                         
@@ -639,7 +657,7 @@
                         <h6 class="title">AWS Certified Cloud Practitioner</h6>
 
                         <p class="post-details">
-                            <a href="#">Issued by Amazon Web Services Training and Certification</a>
+                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_aws-academy-graduate-aws-academy-cloud-activity-7192202950692290560-6Iif?utm_source=share&utm_medium=member_desktop">Issued by Amazon Web Services Training and Certification</a>
                             <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_aws-academy-graduate-aws-academy-cloud-activity-7192202950692290560-6Iif?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 9</a>
                         </p>
                         
@@ -658,11 +676,26 @@
                         <h4 class="title">Agile Explorer</h4>
 
                         <p class="post-details">
-                            <a href="#">Issued by IBM SkillsBuild</a>
+                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_agile-explorer-was-issued-by-ibm-skillsbuild-activity-7134545402166456320-j9rZ?utm_source=share&utm_medium=member_desktop">Issued by IBM SkillsBuild</a>
                             <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_agile-explorer-was-issued-by-ibm-skillsbuild-activity-7134545402166456320-j9rZ?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 5</a>
                         </p>
                         
                         <p>Esta persona que obtuvo la credencial tiene una comprensión fundamental de los valores, principios y prácticas ágiles que ayudan a cambiar la cultura y los comportamientos en la forma en que trabajan las personas. El individuo puede iniciar una conversación ágil con miembros del equipo y colegas, y puede aplicar el método ágil a las operaciones y programas de trabajo que realiza en un entorno familiar, académico o laboral.</p>                       
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog4.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Artificial Intelligence Fundamentals</h4>
+
+                        <p class="post-details">
+                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_artificial-intelligence-fundamentals-was-activity-7146881578009350144-Zc1t?utm_source=share&utm_medium=member_desktop">Issued by IBM SkillsBuild</a>
+                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_artificial-intelligence-fundamentals-was-activity-7146881578009350144-Zc1t?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 2</a>
+                        </p>
+                        
+                        <p>Esta persona que obtiene la credencial demuestra conocimiento de conceptos de inteligencia artificial (IA), como procesamiento del lenguaje natural, visión por computadora, aprendizaje automático, aprendizaje profundo, chatbots y redes neuronales; Ética de la IA; y las aplicaciones de la IA. El individuo tiene una comprensión conceptual de cómo ejecutar un modelo de IA utilizando IBM Watson Studio. Quien gana conoce las perspectivas laborales en campos que utilizan IA y está familiarizado con las habilidades necesarias para tener éxito en diversos roles en el dominio.</p>                       
                     </div>
                 </div><!-- end of blog wrapper -->
             </div>
