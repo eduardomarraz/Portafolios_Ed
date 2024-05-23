@@ -147,4 +147,30 @@ function initMap() {
         }
       ]
     });
+  }
+
+    function uploadImage() {
+      const fileInput = document.getElementById('fileInput');
+      const file = fileInput.files[0];
+  
+      if (file) {
+          const form = document.getElementById('uploadForm');
+          const formData = new FormData(form);
+  
+          fetch('http://localhost:3000/upload', { // Cambia la URL según la configuración de tu servidor
+              method: 'POST',
+              body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+              console.log('Success:', data);
+              alert('Imagen subida exitosamente');
+          })
+          .catch((error) => {
+              console.error('Error:', error);
+              alert('Error al subir la imagen');
+          });
+      } else {
+          alert('Por favor, selecciona una imagen.');
+    }
 }
