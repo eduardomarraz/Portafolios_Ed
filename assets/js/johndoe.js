@@ -12,6 +12,45 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+// Configura las credenciales de AWS
+AWS.config.update({
+  accessKeyId: 'TU_ACCESS_KEY_ID',
+  secretAccessKey: 'TU_SECRET_ACCESS_KEY',
+  region: 'TU_REGION' // Por ejemplo, 'us-east-1'
+});
+
+// Configura el bucket de S3
+const s3 = new AWS.S3({
+  params: { Bucket: 'imagenesed92' }
+});
+
+function uploadImage() {
+  const fileInput = document.getElementById('fileInput');
+  const file = fileInput.files[0];
+
+  if (file) {
+      const params = {
+          Bucket: 'imagenesed92',
+          Key: file.name,
+          Body: file,
+          ACL: 'public-read' // Opcional, para hacer que el archivo sea públicamente accesible
+      };
+
+      s3.upload(params, function(err, data) {
+          if (err) {
+              console.error('Error al subir la imagen:', err);
+              alert('Error al subir la imagen');
+          } else {
+              console.log('Imagen subida exitosamente:', data);
+              alert('Imagen subida exitosamente');
+              document.getElementById('imagePreview').src = data.Location; // Mostrar previsualización de la imagen
+          }
+      });
+  } else {
+      alert('Por favor, selecciona una imagen.');
+  }
+}
+
 // smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
@@ -148,29 +187,3 @@ function initMap() {
       ]
     });
   }
-
-    function uploadImage() {
-      const fileInput = document.getElementById('fileInput');
-      const file = fileInput.files[0];
-  
-      if (file) {
-          const form = document.getElementById('uploadForm');
-          const formData = new FormData(form);
-  
-          fetch('http://localhost:3000/upload', { // Cambia la URL según la configuración de tu servidor
-              method: 'POST',
-              body: formData
-          })
-          .then(response => response.json())
-          .then(data => {
-              console.log('Success:', data);
-              alert('Imagen subida exitosamente');
-          })
-          .catch((error) => {
-              console.error('Error:', error);
-              alert('Error al subir la imagen');
-          });
-      } else {
-          alert('Por favor, selecciona una imagen.');
-    }
-}
