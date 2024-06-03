@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Eduardo Martínez Portafolio.">
     <meta name="author" content="Devcrud">
@@ -9,83 +10,81 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <style>
-        .center-btn {
-            display: flex;
-            justify-content: center;
-        }
-        .header-title {
-            font-size: 2em; /* Ajusta el tamaño según lo que necesites */
-        }
-        .social-icons {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: flex;
-        }
 
-        .social-item {
-            margin-right: 0px; /* Ajusta este valor según lo necesites */
-        }
-
-        .social-item:last-child {
-            margin-right: 120px; /* Elimina el margen derecho del último elemento */
-        }
-
-        .social-link {
-            text-decoration: none;
-            color: #ca1212; /* Asegúrate de que el color se ajuste a tu diseño */
-        }
     </style>
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/eduardomarraz"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>  
+                <li class="social-item"><a class="social-link text-light"
+                        href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"><i class="ti-linkedin"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/eduardomarraz"><i
+                            class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>
             <div class="header-content">
-                <h4 class="header-subtitle" >Hola, soy</h4>
+                <h4 class="header-subtitle es-tx">Hola, soy</h4>
+                <h4 class="header-subtitle en-tx">Hello, I am</h4>
                 <h1 class="header-title">Eduardo Martínez</h1>
-                <h6 class="header-mono" >Full-stack developer | Junior</h6>
+                <h6 class="header-mono es-tx">Desarrollador Full-stack | Junior</h6>
+                <h6 class="header-mono en-tx">Full-stack developer | Junior</h6>
             </div>
         </div>
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Inicio</a>
+                        <a href="#home" class="nav-link es-tx">Inicio</a>
+                        <a href="#home" class="nav-link en-tx" style="display:none;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Acerca</a>
+                        <a href="#about" class="nav-link es-tx">Acerca</a>
+                        <a href="#about" class="nav-link en-tx">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resumen</a>
+                        <a href="#resume" class="nav-link es-tx">Resumen</a>
+                        <a href="#resume" class="nav-link en-tx">Resume</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Eduardo Martínez</h5>
-                        <div class="brand-subtitle">Desarrollador Web | FullStack</div>
+                        <div class="brand-subtitle es-tx">Desarrollador Web | FullStack</div>
+                        <div class="brand-subtitle en-tx">Web Developer | FullStack</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portafolio</a>
+                        <a href="#portfolio" class="nav-link es-tx">Portafolio</a>
+                        <a href="#portfolio" class="nav-link en-tx">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Certificaciones</a>
+                        <a href="#blog" class="nav-link es-tx">Certificaciones</a>
+                        <a href="#blog" class="nav-link en-tx">Certifications</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
+                        <a href="#contact" class="nav-link es-tx">Contacto</a>
+                        <a href="#contact" class="nav-link en-tx">Contact</a>
+                    </li>
+                    <!-- Botones de idiomas -->
+                    <li class="nav-item">
+                        <button id="es-btn" class="btn-lang"><img src="assets/imgs/spain-flag.png"
+                                alt="Español"></button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="en-btn" class="btn-lang"><img src="assets/imgs/uk-flag.png" alt="English"></button>
                     </li>
                 </ul>
             </div>
@@ -94,56 +93,93 @@
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">¿Quien soy?</h3>
+                <h3 class="font-weight-light es-tx">¿Quien soy?</h3>
+                <h3 class="font-weight-light en-tx">Who am I ?</h3>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">Hola, soy un desarrollador web y multiplataforma.</h5>
-                <p class="mt-20"> Mi especialidad abarca la creación de sitios web dinámicos y también el desarrollo de aplicaciones para diversas plataformas. Siempre estoy buscando oportunidades para expandir mis habilidades y enfrentar nuevos desafíos en el campo de la tecnología.</p>
+                <h5 class="mb-3 es-tx">Hola, soy un desarrollador web y multiplataforma.</h5>
+                <h5 class="mb-3 en-tx">Hello, I am a web and cross-platform developer.</h5>
+                <p class="mt-20 es-tx"> Mi especialidad abarca la creación de sitios web dinámicos y también el
+                    desarrollo de
+                    aplicaciones para diversas plataformas. Siempre estoy buscando oportunidades para expandir mis
+                    habilidades y enfrentar nuevos desafíos en el campo de la tecnología.</p>
+                <p class="mt-20 en-tx"> My specialty includes the creation of dynamic websites and also the development
+                    of applications for various platforms. I am always looking for opportunities to expand my skills and
+                    face new challenges in the field of technology.</p>
                 <button class="btn btn-outline-danger">
                     <i class="icon-down-circled2 "></i>
-                    <a href="assets/CV/Curriculum Eduardo Martínez Ramírez.pdf" download><strong>Descargar mi CV</strong></a>
+                    <a class="es-tx" href="assets/CV/Curriculum Eduardo Martínez Ramírez.pdf" download><strong>Descargar
+                            mi
+                            CV</strong></a>
+                    <a class="en-tx" href="assets/CV/Curriculum Eduardo Martínez Ramírez.pdf" download><strong>Download
+                            my
+                            CV</strong></a>
                 </button>
             </div>
             <div id="D_pers" class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Datos Personales</h3>
+                <h3 class="font-weight-light es-tx">Datos Personales</h3>
+                <h3 class="font-weight-light en-tx">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Fecha de nacimiento</span> : 23/08/1992</li>
-                    <li><span>Email</span> : <a href="mailto:eduardomr_@hotmail.com">eduardomr_@hotmail.com</a></li>
-                    <li><span>Telefono</span> : +(34) 649770726</li>
-                    <li><span>Linkedin</span> : <a href="https://www.linkedin.com/in/eduardo-martinez-ramirez/" target="_blank">https://www.linkedin.com/in/eduardo-martinez-ramirez/</a></li>
-                    <li><span>GitHub</span> : <a href="https://github.com/eduardomarraz" target="_blank">https://github.com/eduardomarraz</a> </li>
-                    <li><span>Dirección</span> : Barrio del Pilar - Madrid</li>
+                    <li class="es-tx"><span>Fecha de nacimiento</span> : 23/08/1992</li>
+                    <li class="en-tx"><span>Birthdate</span> : 23/08/1992</li>
+                    <li class="es-tx"><span>Correo</span> : <a
+                            href="mailto:eduardomr_@hotmail.com">eduardomr_@hotmail.com</a></li>
+                    <li class="en-tx"><span>Email</span> : <a
+                            href="mailto:eduardomr_@hotmail.com">eduardomr_@hotmail.com</a></li>
+                    <li class="es-tx"><span>Telefono</span> : +(34) 649770726</li>
+                    <li class="en-tx"><span>Phone</span> : +(34) 649770726</li>
+                    <li><span>Linkedin</span> : <a href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"
+                            target="_blank">https://www.linkedin.com/in/eduardo-martinez-ramirez/</a></li>
+                    <li><span>GitHub</span> : <a href="https://github.com/eduardomarraz"
+                            target="_blank">https://github.com/eduardomarraz</a> </li>
+                    <li class="es-tx"><span>Dirección</span> : Barrio del Pilar - Madrid</li>
+                    <li class="en-tx"><span>Address</span> : Barrio del Pilar - Madrid</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/eduardomarraz"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
+                    <li class="social-item"><a class="social-link"
+                            href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"><i class="ti-linkedin"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/eduardomarraz"><i
+                                class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Conocimientos</h3>
+                <h3 class="font-weight-light es-tx">Conocimientos</h3>
+                <h3 class="font-weight-light en-tx">Knowledge</h3>
                 <span class="line mb-5"></span>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-world icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Desarrollador Web Full-stack</h6>
-                        <p class="subtitle">Desarrollo Front-end con Webs dinámicas con Angular, React y Nodejs.</p>
-                        <p class="subtitle">Programación Back-End con .NET, C#, Java, PHP.</p>
+                        <h6 class="es-tx">Desarrollador Web Full-stack</h6>
+                        <h6 class="en-tx">Full-stack developer</h6>
+                        <p class="subtitle es-tx">Desarrollo Front-end con Webs dinámicas con Angular, React y Nodejs.
+                        </p>
+                        <p class="subtitle en-tx">Front-end development with dynamic websites using Angular, React, and
+                            Node.js.</p>
+                        <p class="subtitle es-tx">Programación Back-End con .NET, C#, Java, PHP.</p>
+                        <p class="subtitle en-tx">Back-end programming with .NET, C#, Java, and PHP.</p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-cloud-down icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Programación de Sistemas informaticos en entornos Cloud con AWS y Azure</h6>
-                        <p class="subtitle">Programación con .NET, C#, Java, PHP y bases de datos MySQL, SQLServer, SQlite</p>
+                        <h6 class="es-tx">Programación de Sistemas informaticos en entornos Cloud con AWS y Azure</h6>
+                        <h6 class="en-tx">Programming of computer systems in Cloud environments with AWS and Azure.</h6>
+                        <p class="subtitle es-tx">Programación con .NET, C#, Java, PHP y bases de datos MySQL,
+                            SQLServer, SQlite</p>
+                        <p class="subtitle en-tx">Programming with .NET, C#, Java, PHP, and MySQL, SQLServer, SQLite
+                            databases.</p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-game icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Desarrollador de aplicaciones multiplataforma</h6>
-                        <p class="subtitle">Diseño de aplicaciones para móviles con Android.</p>
+                        <h6 class="es-tx">Desarrollador de aplicaciones multiplataforma</h6>
+                        <h6 class="en-tx">Cross-platform application developer</h6>
+                        <p class="subtitle es-tx">Diseño de aplicaciones para móviles con Android.</p>
+                        <p class="subtitle en-tx">Designing mobile applications for Android.</p>
                         <hr>
                     </div>
                 </div>
@@ -154,153 +190,255 @@
     <!--Resume Section-->
     <section class="section" id="resume">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">Mi</span> Resumen</h2>
+            <h2 class="mb-5 es-tx"><span class="text-danger es-tx">Mi</span> Resumen</h2>
+            <h2 class="mb-5 en-tx"><span class="text-danger en-tx">My</span> Resume</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="mt-2">
-                                <h4>Experiencia</h4>
-                                <span class="line"></span>  
+                                <h4 class="es-tx">Experiencia</h4>
+                                <h4 class="en-tx">Experience</h4>
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body">
                             <h7 class="title text-danger">04/2023 - 09/2023</h7>
-                            <p id="highlighted-text" style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"><strong>Desarrollador full-stack en intuye</strong></p>
-                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Desarrollo de un gestor documental con PHP, HTML, CSS y JavaScript con las siguientes funcionalidades:</strong></p>
+                            <p id="highlighted-text"
+                                style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                                <strong class="es-tx">Desarrollador full-stack en intuye</strong>
+                                <strong class="en-tx">Full-stack developer at Intuye</strong>
+                            </p>
+                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;">
+                                <strong class="es-tx">Desarrollo de un gestor documental con PHP, HTML, CSS y JavaScript
+                                    con las
+                                    siguientes funcionalidades:</strong>
+                                <strong class="en-tx">Development of a document management system with PHP, HTML, CSS,
+                                    and JavaScript with the following functionalities:</strong>
+                            </p>
                             <ul>
-                                <li>Implementando una plataforma web con funciones de registro y autenticación vinculada a una base de datos MySQL mediante XAMPP.</li>
-                                <li>Diseñando un sistema de gestión de usuarios con roles y privilegios personalizables.</li>
-                                <li>Creación de un gestor de archivos, que permite: subir, borrar, ordenar, etiquetar archivos.</li>
+                                <li class="es-tx">Implementando una plataforma web con funciones de registro y
+                                    autenticación vinculada
+                                    a una base de datos MySQL mediante XAMPP.</li>
+                                <li class="en-tx">Implementing a web platform with registration and authentication
+                                    functions linked to a MySQL database using XAMPP.</li>
+                                <li class="es-tx">Diseñando un sistema de gestión de usuarios con roles y privilegios
+                                    personalizables.
+                                </li>
+                                <li class="en-tx">Designing a user management system with customizable roles and
+                                    privileges.
+                                </li>
+                                <li class="es-tx">Creación de un gestor de archivos, que permite: subir, borrar,
+                                    ordenar, etiquetar
+                                    archivos.</li>
+                                <li class="en-tx">Creation of a file manager that allows: uploading, deleting, sorting,
+                                    and tagging files.</li>
                             </ul>
-                            <p id="subtitle-2" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Desarrollo de una web de comercio electrónico con .NET Core 6 y Azure con:</strong></p>
+                            <p id="subtitle-2" style="font-size: 16px; color: #343a40; font-weight: bold;">
+                                <strong class="es-tx">Desarrollo de una web de comercio electrónico con .NET Core 6 y
+                                    Azure
+                                    con:</strong>
+                                <strong class="en-tx">Development of an e-commerce website with .NET Core 6 and Azure,
+                                    including:</strong>
+                            </p>
                             <ul>
-                                <li>Utilizando ASP.NET Core y Razor Pages, implementando una arquitectura de microservicios con Azure y gestión de Apis mediante Postman.</li>
-                                <li>Usando Azure Functions para la implementación de funciones serverless, reduciendo el coste de infraestructura.</li>
-                                <li>Implementamos técnicas de monitorización y logging utilizando Azure Application Insights.</li>
+                                <li class="es-tx">Utilizando ASP.NET Core y Razor Pages, implementando una arquitectura
+                                    de
+                                    microservicios con Azure y gestión de Apis mediante Postman.</li>
+                                <li class="en-tx">Using ASP.NET Core and Razor Pages, implementing a microservices
+                                    architecture with Azure and API management through Postman.</li>
+                                <li class="es-tx">Usando Azure Functions para la implementación de funciones serverless,
+                                    reduciendo el
+                                    coste de infraestructura.</li>
+                                <li class="en-tx">Using Azure Functions for implementing serverless functions, reducing
+                                    infrastructure costs.</li>
+                                <li class="es-tx">Implementamos técnicas de monitorización y logging utilizando Azure
+                                    Application
+                                    Insights.</li>
+                                <li class="en-tx">We implement monitoring and logging techniques using Azure Application
+                                    Insights.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="mt-2">
-                                <h4>Estudios</h4>
-                                <span class="line"></span>  
+                                <h4 class="es-tx">Estudios</h4>
+                                <h4 class="en-tx">Studies</h4>
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body">
                             <h7 class="title text-danger">03/2024 - 07/2024</h7>
-                            <p id="highlighted-text" style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"><strong>Curso de programador de sistemas en AWS</strong></p>
-                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Centro Tajamar (600h).</strong></p>
+                            <p id="highlighted-text"
+                                style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                                <strong class="es-tx">Curso de programador de sistemas en AWS</strong>
+                                <strong class="en-tx">AWS Systems Developer Course</strong>
+                            </p>
+                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;">
+                                <strong>Centro Tajamar (600h).</strong>
+                            </p>
                             <ul>
-                                <li>Desarrollo de aplicaciones en la nube utilizando AWS SDKs y herramientas de desarrollo.</li>
-                                <li>Uso de servicios como EC2, S3, RDS, SNS, Lambda, Docker, Kubernetes, Terraform, Grafana</li>
-                                <li>Con certificaciones en AWS Cloud Practitioner y Developer Associate.</li>
+                                <li class="es-tx">Desarrollo de aplicaciones en la nube utilizando AWS SDKs y
+                                    herramientas de
+                                    desarrollo.</li>
+                                <li class="en-tx">Development of cloud applications using AWS SDKs and development
+                                    tools.</li>
+                                <li class="es-tx">Uso de servicios como EC2, S3, RDS, SNS, Lambda, Docker, Kubernetes,
+                                    Terraform,
+                                    Grafana</li>
+                                <li class="en-tx">Utilization of services such as EC2, S3, RDS, SNS, Lambda, Docker,
+                                    Kubernetes, Terraform, Grafana.</li>
+                                <li class="es-tx">Con certificaciones en AWS Cloud Practitioner y Developer Associate.
+                                </li>
+                                <li class="en-tx">With certifications in AWS Cloud Practitioner and Developer Associate.
+                                </li>
                             </ul>
                             <hr>
                             <h7 class="title text-danger">10/2023 - 03/2024</h7>
-                            <p id="highlighted-text" style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"><strong>Curso de desarrollador web para Microsoft Azure</strong></p>
-                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Centro Tajamar (400h).</strong></p>
+                            <p id="highlighted-text"
+                                style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                                <strong class="es-tx">Curso de desarrollador web para Microsoft Azure</strong>
+                                <strong class="en-tx">"Microsoft Azure Web Developer Course"</strong>
+                            </p>
+                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;">
+                                <strong>Centro Tajamar (400h).</strong>
+                            </p>
                             <ul>
-                                <li>Desarrollo web mediante .NET con ASP.NET Core: MVC, Razor pages, Blazor y API RESTful.</li>
-                                <li>Desarrollo en la nube de Azure con servicios como: Azure VM, App Service, SQL DataBase,
+                                <li class="es-tx">Desarrollo web mediante .NET con ASP.NET Core: MVC, Razor pages,
+                                    Blazor y API
+                                    RESTful.</li>
+                                <li class="en-tx">Web development using .NET with ASP.NET Core: MVC, Razor Pages,
+                                    Blazor, and RESTful API.</li>
+                                <li class="es-tx">Desarrollo en la nube de Azure con servicios como: Azure VM, App
+                                    Service, SQL
+                                    DataBase,
                                     Blob Storage, Active Directory, Functions, Cosmos DB y Azure DevOps.</li>
-                                <li>Con certificaciónes en Azure Fundamentals y Azure Administrator Associate.</li>
+                                <li class="en-tx">Cloud development on Azure with services such as Azure VM, App
+                                    Service, SQL Database, Blob Storage, Active Directory, Functions, Cosmos DB, and
+                                    Azure DevOps.</li>
+                                <li class="es-tx">Con certificaciónes en Azure Fundamentals y Azure Administrator
+                                    Associate.</li>
+                                <li class="en-tx">With certifications in Azure Fundamentals and Azure Administrator
+                                    Associate.</li>
                             </ul>
                             <h7 class="title text-danger">09/2021 - 07/2023</h7>
-                            <p id="highlighted-text" style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"><strong>Título de FP Grado Superior “Técnico Superior en Desarrollo de
-                                Aplicaciones Multiplataforma (DAM)”</strong></p>
-                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;"><strong>Universidad Alfonso X El Sabio</strong></p>
+                            <p id="highlighted-text"
+                                style="font-size: 18px; color: #007bff; background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                                <strong class="es-tx">Título de FP Grado Superior “Técnico Superior en Desarrollo de
+                                    Aplicaciones Multiplataforma (DAM)”</strong>
+                                <strong class="en-tx">"Higher Professional Training Degree in Multiplatform Application Development (DAM)"</strong>
+                            </p>
+                            <p id="subtitle-1" style="font-size: 16px; color: #343a40; font-weight: bold;">
+                                <strong class="es-tx">Universidad Alfonso X El Sabio</strong>
+                                <strong class="en-tx">Alfonso X El Sabio University</strong>
+                            </p>
                             <ul>
-                                <li>Programación orientada a objetos Java, C# y PHP.</li>
-                                <li>Desarrollo de aplicaciones móviles para Android usando Android Studio.</li>
-                                <li>Programación web con HTML, CSS, JavaScript y Bootstrap.</li>
+                                <li class="es-tx">Programación orientada a objetos Java, C# y PHP.</li>
+                                <li class="en-tx">Object-oriented programming in Java, C#, and PHP.</li>
+                                <li class="es-tx">Desarrollo de aplicaciones móviles para Android usando Android Studio.</li>
+                                <li class="en-tx">Development of mobile applications for Android using Android Studio.</li>
+                                <li class="es-tx">Programación web con HTML, CSS, JavaScript y Bootstrap.</li>
+                                <li class="en-tx">Web programming with HTML, CSS, JavaScript, and Bootstrap.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="pull-left">
                                 <h4 class="mt-2">Habilidades</h4>
-                                <span class="line"></span>  
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>.NET &amp; C# </h6>
+                            <h6>.NET &amp; C# </h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Java</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>PHP</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Angular</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>React</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>AZURE</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>AWS</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>                            
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                             <h6>SQL Server</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Android </h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
-                             <div class="pull-left">
-                                 <h4 class="mt-2">Metodologías Agiles</h4>
-                                 <span class="line"></span>  
-                             </div>
-                         </div>
-                         <div class="card-body pb-2">
-                            <h6>Scrum</h6>
-                             <div class="progress mb-3">
-                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-                             <h6>Kanban</h6>
-                             <div class="progress mb-3">
-                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-                         </div>
-                    </div>
-                    <div class="card">
-                       <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Idiomas</h4>
-                                <span class="line"></span>  
+                                <h4 class="mt-2">Metodologías Agiles</h4>
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>Español</h6>
+                            <h6>Scrum</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Kanban</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Idiomas</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>Español</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Ingles</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -366,67 +504,79 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-vector text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">Diseño Web Fullstack</h5>
-                            <p class="subtitle">Ofrezco servicios completos de diseño y desarrollo web, utilizando tecnologías como HTML, CSS, JavaScript, .NET y PHP para crear sitios web dinámicos, receptivos y optimizados para SEO.</p>
+                            <p class="subtitle">Ofrezco servicios completos de diseño y desarrollo web, utilizando
+                                tecnologías como HTML, CSS, JavaScript, .NET y PHP para crear sitios web dinámicos,
+                                receptivos y optimizados para SEO.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-cloud text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">Soluciones en la Nube</h5>
-                            <p class="subtitle">Desarrollo de soluciones escalables y seguras en la nube con Azure, incluyendo la implementación de microservicios, funciones serverless y gestión de bases de datos.</p>
+                            <p class="subtitle">Desarrollo de soluciones escalables y seguras en la nube con Azure,
+                                incluyendo la implementación de microservicios, funciones serverless y gestión de bases
+                                de datos.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-mobile text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">Aplicaciones Móviles</h5>
-                            <p class="subtitle">Diseño y desarrollo de aplicaciones móviles para Android, asegurando una experiencia de usuario intuitiva y funcionalidad avanzada utilizando tecnologías como React Native y Xamarin.</p>
+                            <p class="subtitle">Diseño y desarrollo de aplicaciones móviles para Android, asegurando una
+                                experiencia de usuario intuitiva y funcionalidad avanzada utilizando tecnologías como
+                                React Native y Xamarin.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">Uso de Herramientas con IA</h5>
-                            <p class="subtitle">Integración de herramientas de inteligencia artificial para mejorar procesos empresariales, desde chatbots hasta análisis predictivo y automatización de tareas repetitivas.</p>
+                            <p class="subtitle">Integración de herramientas de inteligencia artificial para mejorar
+                                procesos empresariales, desde chatbots hasta análisis predictivo y automatización de
+                                tareas repetitivas.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-pencil text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">Ingeniería de Prompt</h5>
-                            <p class="subtitle">Desarrollo de prompts efectivos y personalizados para modelos de lenguaje IA, mejorando la interacción y eficiencia en aplicaciones de procesamiento de lenguaje natural.</p>
+                            <p class="subtitle">Desarrollo de prompts efectivos y personalizados para modelos de
+                                lenguaje IA, mejorando la interacción y eficiencia en aplicaciones de procesamiento de
+                                lenguaje natural.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-settings text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">Consultoría y Formación</h5>
-                            <p class="subtitle">Servicios de consultoría y formación en tecnologías web y de desarrollo, ayudando a equipos a mejorar sus habilidades y adoptar nuevas tecnologías de manera efectiva.</p>
+                            <p class="subtitle">Servicios de consultoría y formación en tecnologías web y de desarrollo,
+                                ayudando a equipos a mejorar sus habilidades y adoptar nuevas tecnologías de manera
+                                efectiva.</p>
                         </div>
                     </div>
                 </div>
@@ -437,7 +587,7 @@
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal">Estoy disponible como FreeLance</h2>
             <a href="#D_pers" class="nav-link">
-            <button class="btn bg-primary w-lg" >¡Contrátame!</button></a>
+                <button class="btn bg-primary w-lg">¡Contrátame!</button></a>
         </div>
     </section>
 
@@ -460,46 +610,50 @@
                         Web
                     </a>
                 </div>
-                <div class="portfolio-container"> 
+                <div class="portfolio-container">
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="assets/imgs/web-1.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">WEB</h6>
                                     <p class="subtitle">Paginas Web personalizadas</p>
                                 </div>
-                            </div>   
-                        </div>             
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="assets/imgs/web-2.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">WEB</h6>
                                     <p class="subtitle">Paginas Web personalizadas</p>
                                 </div>
-                            </div> 
-                        </div>                         
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">Publicidad</h6>
                                     <p class="subtitle">Paginas Web para marketing</p>
                                 </div>
-                            </div>    
-                        </div>              
-                    </div> 
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 web">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="assets/imgs/web-4.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
                                 <div class="text-holder">
@@ -507,12 +661,13 @@
                                     <p class="subtitle">Paginas Web personalizadas</p>
                                 </div>
                             </div>
-                        </div>                                                     
+                        </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="col-md-6 col-lg-4 advertising">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
                                 <div class="text-holder">
@@ -520,35 +675,38 @@
                                     <p class="subtitle">Paginas Web para marketing</p>
                                 </div>
                             </div>
-                        </div>                                                       
-                    </div> 
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                           <div class="content-holder">
+                            <img src="assets/imgs/web-3.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">WEB</h6>
                                     <p class="subtitle">Paginas Web personalizadas</p>
                                 </div>
                             </div>
-                        </div>                                                     
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                           <div class="content-holder">
+                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">Publicidad</h6>
                                     <p class="subtitle">Paginas Web para marketing</p>
                                 </div>
                             </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
                                 <div class="text-holder">
@@ -557,23 +715,25 @@
                                 </div>
                             </div>
                         </div>
-                                
-                    </div> 
+
+                    </div>
                     <div class="col-md-6 col-lg-4 branding new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <img src="assets/imgs/branding-1.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
                                 <div class="text-holder">
                                     <h6 class="title">Portafolios</h6>
                                     <p class="subtitle">Paginas Web personalizadas para perfiles profesionales</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-md-6 col-lg-4 branding">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                            <img src="assets/imgs/branding-2.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
                                 <div class="text-holder">
@@ -581,11 +741,12 @@
                                     <p class="subtitle">Paginas Web personalizadas para perfiles profesionales</p>
                                 </div>
                             </div>
-                        </div>                                                     
-                    </div> 
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 branding new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                            <img src="assets/imgs/branding-3.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
                                 <div class="text-holder">
@@ -593,11 +754,12 @@
                                     <p class="subtitle">Paginas Web personalizadas para perfiles profesionales</p>
                                 </div>
                             </div>
-                        </div>                                                    
-                    </div> 
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 branding">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                            <img src="assets/imgs/branding-4.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
                                 <div class="text-holder">
@@ -605,11 +767,12 @@
                                     <p class="subtitle">Paginas Web personalizadas para perfiles profesionales</p>
                                 </div>
                             </div>
-                        </div>                                                      
-                    </div> 
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 branding">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                            <img src="assets/imgs/branding-5.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
                                 <div class="text-holder">
@@ -617,11 +780,11 @@
                                     <p class="subtitle">Paginas Web personalizadas para perfiles profesionales</p>
                                 </div>
                             </div>
-                        </div>                                                   
+                        </div>
                     </div>
-                </div> 
-            </div>  
-        </div>            
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End of portfolio section -->
 
@@ -631,78 +794,116 @@
             <div class="row">
                 <div class="blog-card">
                     <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img src="assets/imgs/blog1.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Microsoft Certified: Azure Fundamentals</h6>
 
                         <p class="post-details">
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_microsoft-certified-azure-fundamentals-was-activity-7178001560566710272-jt5K?utm_source=share&utm_medium=member_desktop">Issued by Microsoft</a>
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_microsoft-certified-azure-fundamentals-was-activity-7178001560566710272-jt5K?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 12</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_microsoft-certified-azure-fundamentals-was-activity-7178001560566710272-jt5K?utm_source=share&utm_medium=member_desktop">Issued
+                                by Microsoft</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_microsoft-certified-azure-fundamentals-was-activity-7178001560566710272-jt5K?utm_source=share&utm_medium=member_desktop"><i
+                                    class="ti-heart text-danger"></i> 12</a>
                         </p>
-                        
-                        <p>Los ganadores de la certificación Azure Fundamentals han demostrado un conocimiento de nivel avanzado de los servicios en la nube y cómo se brindan esos servicios con Microsoft Azure.</p>
+
+                        <p>Los ganadores de la certificación Azure Fundamentals han demostrado un conocimiento de nivel
+                            avanzado de los servicios en la nube y cómo se brindan esos servicios con Microsoft Azure.
+                        </p>
 
                         <p><b>Conocimientos Adquiridos</b></p>
-                        <li>Azure, Cloud Data, Cloud Networking, Cloud Security, Cloud Services, Cloud Storage, Virtualization.</li>
+                        <li>Azure, Cloud Data, Cloud Networking, Cloud Security, Cloud Services, Cloud Storage,
+                            Virtualization.</li>
                     </div>
                 </div><!-- end of blog wrapper -->
 
                 <!-- blog-card -->
                 <div class="blog-card">
                     <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img src="assets/imgs/blog2.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">AWS Certified Cloud Practitioner</h6>
 
                         <p class="post-details">
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_aws-academy-graduate-aws-academy-cloud-activity-7192202950692290560-6Iif?utm_source=share&utm_medium=member_desktop">Issued by Amazon Web Services Training and Certification</a>
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_aws-academy-graduate-aws-academy-cloud-activity-7192202950692290560-6Iif?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 9</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_aws-academy-graduate-aws-academy-cloud-activity-7192202950692290560-6Iif?utm_source=share&utm_medium=member_desktop">Issued
+                                by Amazon Web Services Training and Certification</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_aws-academy-graduate-aws-academy-cloud-activity-7192202950692290560-6Iif?utm_source=share&utm_medium=member_desktop"><i
+                                    class="ti-heart text-danger"></i> 9</a>
                         </p>
-                        
-                        <p>Los ganadores de esta certificación tienen un conocimiento avanzado de los servicios de TI y sus usos en la nube de AWS. Demostraron fluidez en la nube y conocimiento fundamental de AWS. Los propietarios de insignias pueden identificar los servicios esenciales de AWS necesarios para configurar proyectos centrados en AWS.</p>
+
+                        <p>Los ganadores de esta certificación tienen un conocimiento avanzado de los servicios de TI y
+                            sus usos en la nube de AWS. Demostraron fluidez en la nube y conocimiento fundamental de
+                            AWS. Los propietarios de insignias pueden identificar los servicios esenciales de AWS
+                            necesarios para configurar proyectos centrados en AWS.</p>
 
                         <p><b>Conocimientos Adquiridos</b></p>
-                        <li>Amazon Web Services, AWS Cloud, AWS Certification, Cloud Computing, Cloud Plataform, Cloud Storage, Virtualization.</li>
+                        <li>Amazon Web Services, AWS Cloud, AWS Certification, Cloud Computing, Cloud Plataform, Cloud
+                            Storage, Virtualization.</li>
                     </div>
                 </div><!-- end of blog wrapper -->
                 <!-- blog-card -->
                 <div class="blog-card">
                     <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img src="assets/imgs/blog3.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="content-holder">
                         <h4 class="title">Agile Explorer</h4>
 
                         <p class="post-details">
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_agile-explorer-was-issued-by-ibm-skillsbuild-activity-7134545402166456320-j9rZ?utm_source=share&utm_medium=member_desktop">Issued by IBM SkillsBuild</a>
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_agile-explorer-was-issued-by-ibm-skillsbuild-activity-7134545402166456320-j9rZ?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 5</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_agile-explorer-was-issued-by-ibm-skillsbuild-activity-7134545402166456320-j9rZ?utm_source=share&utm_medium=member_desktop">Issued
+                                by IBM SkillsBuild</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_agile-explorer-was-issued-by-ibm-skillsbuild-activity-7134545402166456320-j9rZ?utm_source=share&utm_medium=member_desktop"><i
+                                    class="ti-heart text-danger"></i> 5</a>
                         </p>
-                        
-                        <p>Esta persona que obtuvo la credencial tiene una comprensión fundamental de los valores, principios y prácticas ágiles que ayudan a cambiar la cultura y los comportamientos en la forma en que trabajan las personas. El individuo puede iniciar una conversación ágil con miembros del equipo y colegas, y puede aplicar el método ágil a las operaciones y programas de trabajo que realiza en un entorno familiar, académico o laboral.</p>                       
+
+                        <p>Esta persona que obtuvo la credencial tiene una comprensión fundamental de los valores,
+                            principios y prácticas ágiles que ayudan a cambiar la cultura y los comportamientos en la
+                            forma en que trabajan las personas. El individuo puede iniciar una conversación ágil con
+                            miembros del equipo y colegas, y puede aplicar el método ágil a las operaciones y programas
+                            de trabajo que realiza en un entorno familiar, académico o laboral.</p>
                     </div>
                 </div><!-- end of blog wrapper -->
                 <div class="blog-card">
                     <div class="img-holder">
-                        <img src="assets/imgs/blog4.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img src="assets/imgs/blog4.jpg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="content-holder">
                         <h4 class="title">Artificial Intelligence Fundamentals</h4>
 
                         <p class="post-details">
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_artificial-intelligence-fundamentals-was-activity-7146881578009350144-Zc1t?utm_source=share&utm_medium=member_desktop">Issued by IBM SkillsBuild</a>
-                            <a href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_artificial-intelligence-fundamentals-was-activity-7146881578009350144-Zc1t?utm_source=share&utm_medium=member_desktop"><i class="ti-heart text-danger"></i> 2</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_artificial-intelligence-fundamentals-was-activity-7146881578009350144-Zc1t?utm_source=share&utm_medium=member_desktop">Issued
+                                by IBM SkillsBuild</a>
+                            <a
+                                href="https://www.linkedin.com/posts/eduardo-martinez-ramirez_artificial-intelligence-fundamentals-was-activity-7146881578009350144-Zc1t?utm_source=share&utm_medium=member_desktop"><i
+                                    class="ti-heart text-danger"></i> 2</a>
                         </p>
-                        
-                        <p>Esta persona que obtiene la credencial demuestra conocimiento de conceptos de inteligencia artificial (IA), como procesamiento del lenguaje natural, visión por computadora, aprendizaje automático, aprendizaje profundo, chatbots y redes neuronales; Ética de la IA; y las aplicaciones de la IA. El individuo tiene una comprensión conceptual de cómo ejecutar un modelo de IA utilizando IBM Watson Studio. Quien gana conoce las perspectivas laborales en campos que utilizan IA y está familiarizado con las habilidades necesarias para tener éxito en diversos roles en el dominio.</p>                       
+
+                        <p>Esta persona que obtiene la credencial demuestra conocimiento de conceptos de inteligencia
+                            artificial (IA), como procesamiento del lenguaje natural, visión por computadora,
+                            aprendizaje automático, aprendizaje profundo, chatbots y redes neuronales; Ética de la IA; y
+                            las aplicaciones de la IA. El individuo tiene una comprensión conceptual de cómo ejecutar un
+                            modelo de IA utilizando IBM Watson Studio. Quien gana conoce las perspectivas laborales en
+                            campos que utilizan IA y está familiarizado con las habilidades necesarias para tener éxito
+                            en diversos roles en el dominio.</p>
                     </div>
                 </div><!-- end of blog wrapper -->
             </div>
             <div style="text-align: center;">
-                <button  class="btn btn-outline-danger">
+                <button class="btn btn-outline-danger">
                     <i class="icon-down-circled2"></i>
-                    <a href="assets/CV/Curriculum Eduardo Martínez Ramírez.pdf" download><strong>Descargar mi CV</strong></a>
+                    <a href="assets/CV/Curriculum Eduardo Martínez Ramírez.pdf" download><strong>Descargar mi
+                            CV</strong></a>
                 </button>
             </div>
         </div>
@@ -712,7 +913,7 @@
         <div id="map" class="map"></div>
         <div class="container">
             <div class="row">
-                <div  class="col-lg-6">
+                <div class="col-lg-6">
                     <div class="contact-info-card">
                         <h4 class="contact-title">Ponerse en contacto</h4>
                         <div class="row mb-2">
@@ -720,7 +921,8 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Telefono: <br> <span class="text-muted">+ (34) 649770726</span></h6>
+                                <h6 class="d-inline">Telefono: <br> <span class="text-muted">+ (34) 649770726</span>
+                                </h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -728,7 +930,8 @@
                                 <i class="ti-map-alt icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Dirección:<br> <span class="text-muted">Barrio del Pilar - Madrid.</span></h6>
+                                <h6 class="d-inline">Dirección:<br> <span class="text-muted">Barrio del Pilar -
+                                        Madrid.</span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -736,13 +939,18 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Correo:<br> <span class="text-muted">eduardomr_@hotmail.com</span></h6>
+                                <h6 class="d-inline">Correo:<br> <span class="text-muted">eduardomr_@hotmail.com</span>
+                                </h6>
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/eduardomarraz"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://www.linkedin.com/in/eduardo-martinez-ramirez/"><i class="ti-linkedin"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://github.com/eduardomarraz"><i class="ti-github"
+                                        aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -752,12 +960,15 @@
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Creado con <i class="ti-heart text-danger"></i> por <span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Eduardo Martínez Ramírez</span></a> 
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Creado con <i
+                    class="ti-heart text-danger"></i> por <span class="text-danger"
+                    title="Bootstrap 4 Themes and Dashboards">Eduardo Martínez Ramírez</span></a>
             </p>
         </div>
     </footer>
 
-	<!-- core  -->
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
@@ -766,14 +977,17 @@
 
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
+
     <!-- Google maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12139.660277642402!2d-3.7091729499999997!3d40.4771439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229993dead6e5%3A0x122d022bed2d708a!2sEl%20Pilar%2C%20Fuencarral-El%20Pardo%2C%20Madrid!5e0!3m2!1ses!2ses!4v1716305584744!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-    
+
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+    <script src="assets/js/lang.js"></script>
 
 </body>
+
 </html>

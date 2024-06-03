@@ -49,6 +49,91 @@
 *::after {
   box-sizing: border-box;
 }
+/* Parte añadida por mi */
+.center-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 2em;
+  /* Ajusta el tamaño según lo que necesites */
+}
+
+.social-icons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social-item {
+  margin-right: 0px;
+  /* Ajusta este valor según lo necesites */
+}
+
+.social-item:last-child {
+  margin-right: 120px;
+  /* Elimina el margen derecho del último elemento */
+}
+
+.social-link {
+  text-decoration: none;
+  color: #ca1212;
+  /* Asegúrate de que el color se ajuste a tu diseño */
+}
+
+.language-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.language-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.language-buttons img {
+  width: 36px;
+  /* Ajusta el ancho */
+  height: 24px;
+  /* Ajusta la altura */
+  border-radius: 4px;
+  /* Añade bordes redondeados si lo deseas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Añade una sombra para un mejor aspecto */
+}
+
+.navbar .btn-lang {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.navbar .btn-lang img {
+  width: 36px;
+  /* Ajusta el ancho */
+  height: 24px;
+  /* Ajusta la altura */
+  border-radius: 4px;
+  /* Añade bordes redondeados si lo deseas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Añade una sombra para un mejor aspecto */
+}
+.navbar-nav .brand-img {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: -110px;
+}
+/* Fin de mi parte añadida*/
 
 html {
   font-family: sans-serif;
