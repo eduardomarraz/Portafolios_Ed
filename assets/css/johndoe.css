@@ -688,8 +688,6 @@ pre code {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .no-gutters {
@@ -11066,6 +11064,7 @@ p {
 
 .icon-lg {
   font-size: 30px;
+  position: relative;
 }
 
 .icon-xl {
